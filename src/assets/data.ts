@@ -1,11 +1,4 @@
-import { Color, IconName } from "@/utils/type";
-
-export type Feature = {
-    iconName: IconName;
-    iconColor: Color;
-    title: string;
-    description: string;
-};
+import { Feature, PricingPlan } from "@/utils/type";
 
 export const features: Feature[] = [
     {
@@ -43,5 +36,37 @@ export const features: Feature[] = [
         iconColor: "text-purple-500",
         title: "File Management",
         description: "Organize, rename, and delete files easily from your dashboard.",
+    },
+];
+
+export const pricingPlans: PricingPlan[] = [
+    {
+        name: "Basic",
+        price: 0,
+        description: "Ideal for individuals getting started with file sharing.",
+        features: ["5 GB Storage", "Basic File Sharing", "Standard Support"],
+    },
+    {
+        name: "Pro",
+        highlighted: true,
+        price: 9.99,
+        description: "Perfect for professionals who need more features and storage.",
+        features: [
+            "100 GB Storage",
+            "Advanced File Sharing",
+            "Priority Support",
+            "File Versioning",
+        ],
+    },
+    {
+        name: "Enterprise",
+        price: 29.99,
+        description: "Best for businesses requiring advanced features and priority support.",
+        features: [
+            "1 TB Storage",
+            "All Pro Features",
+            "Dedicated Account Manager",
+            "24/7 Premium Support",
+        ],
     },
 ];

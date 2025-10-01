@@ -15,3 +15,18 @@ export type Color =
     | "text-amber-500";
 
 export type IconName = "ArrowUpCircle" | "Shield" | "Share2" | "CreditCard" | "Clock" | "FileText";
+
+export type Feature = {
+    iconName: IconName;
+    iconColor: Color;
+    title: string;
+    description: string;
+};
+
+export type PricingPlan = {
+    name: string;
+    highlighted?: boolean;
+    description: string;
+    price: number;
+    features: string[];
+};

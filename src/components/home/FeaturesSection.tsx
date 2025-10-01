@@ -1,5 +1,4 @@
-import { Feature } from "@/assets/data";
-import { Color } from "@/utils/type";
+import { Color, Feature } from "@/utils/type";
 import { ArrowUpCircle, Clock, CreditCard, FileText, Share2, Shield } from "lucide-react";
 
 type FeaturesSectionProps = {
@@ -30,13 +29,13 @@ export default function FeaturesSection({ features }: FeaturesSectionProps) {
     };
 
     return (
-        <div className="py-16 bg-sky-50">
+        <div className="py-16 bg-green-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
                         Everything you need to manage your files
                     </h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-700">
+                    <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-600">
                         CloudSharing offers a comprehensive suite of features designed to make file
                         sharing and management effortless.
                     </p>
