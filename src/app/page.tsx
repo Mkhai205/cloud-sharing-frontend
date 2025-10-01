@@ -1,4 +1,4 @@
-import { features, pricingPlans } from "@/assets/data";
+import { features, pricingPlans, testimonials } from "@/assets/data";
 import CTASection from "@/components/home/CTASection";
 import FeaturesSection from "@/components/home/FeaturesSection";
 import FooterSection from "@/components/home/FooterSection";
@@ -19,7 +19,7 @@ export default function HomePage() {
             <PricingSection pricingPlans={pricingPlans} />
 
             {/* {Testimonials Section} */}
-            <TestimonialsSection />
+            <TestimonialsSection testimonials={testimonials} />
 
             {/* {CTA Section} */}
             <CTASection />

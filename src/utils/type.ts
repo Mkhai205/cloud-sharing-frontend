@@ -30,3 +30,12 @@ export type PricingPlan = {
     price: number;
     features: string[];
 };
+
+export type Testimonial = {
+    name: string;
+    role: string;
+    company: string;
+    avatarUrl: string;
+    quote: string;
+    rating: 1 | 2 | 3 | 4 | 5;
+};
