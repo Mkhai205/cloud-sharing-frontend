@@ -3,12 +3,16 @@ import CTASection from "@/components/home/CTASection";
 import FeaturesSection from "@/components/home/FeaturesSection";
 import FooterSection from "@/components/home/FooterSection";
 import HeroSection from "@/components/home/HeroSection";
+import Narbar from "@/components/home/Narbar";
 import PricingSection from "@/components/home/PricingSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 
 export default function HomePage() {
     return (
         <div className="home-page bg-gradient-to-b from-gray-50 to-gray-100">
+            {/* {NarBar} */}
+            <Narbar />
+
             {/* {Hero Section} */}
             <HeroSection />
 

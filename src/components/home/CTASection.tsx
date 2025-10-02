@@ -1,6 +1,6 @@
 export default function CTASection() {
     return (
-        <div className="bg-amber-50 min-h-96 flex items-center">
+        <div id="sign-up" className="bg-amber-50 min-h-96 flex items-center">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:flex-1 lg:items-center lg:justify-around">
                 <h2 className="text-center text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
                     <span className="block">Ready to get started?</span>
