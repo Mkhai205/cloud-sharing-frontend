@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 
 export default function HeroSection() {
     return (
@@ -21,12 +22,18 @@ export default function HeroSection() {
 
                         <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                             <div className="mx-auto inline-grid grid-cols-2 gap-5">
-                                <button className="flex items-center justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-green-600/90 hover:bg-green-600 md:py-4 md:text-lg md:px-10 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer">
+                                <Link
+                                    href="/register"
+                                    className="flex items-center justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-green-600/90 hover:bg-green-600 md:py-4 md:text-lg md:px-10 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer"
+                                >
                                     Get Started
-                                </button>
-                                <button className="flex items-center justify-center px-6 py-3 border-1 border-green-600 font-medium rounded-md text-slate-900 bg-white md:py-4 md:text-lg md:px-10 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer">
+                                </Link>
+                                <Link
+                                    href="/login"
+                                    className="flex items-center justify-center px-6 py-3 border-1 border-green-600 font-medium rounded-md text-slate-900 bg-white md:py-4 md:text-lg md:px-10 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer"
+                                >
                                     Sign In
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

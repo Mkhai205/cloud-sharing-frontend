@@ -62,14 +62,14 @@ export default function Narbar() {
 
                 {/* Mobile Menu Overlay */}
                 {mobileMenuOpen && (
-                    <div className="absolute top-16 left-0 w-full bg-[#030014] backdrop-blur-md border-t border-sky-300">
-                        <div className="flex flex-col px-4 py-6 space-y-4">
+                    <div className="absolute top-16 left-0 w-full bg-sky-100 backdrop-blur-md border-t border-sky-300">
+                        <div className="flex flex-col p-4 space-y-4">
                             {/* Navigation Links */}
                             {HomeSections.map((section) => (
                                 <button
                                     key={section.id}
                                     onClick={() => handleScrollToSection(section.id)}
-                                    className="text-slate-200 hover:text-sky-400 transition-colors duration-300 py-2 border-b border-slate-800 last:border-b-0 text-left"
+                                    className="text-slate-900 hover:text-sky-400 transition-colors duration-300 py-2 border-b border-slate-800 last:border-b-0 text-left"
                                 >
                                     {section.name}
                                 </button>

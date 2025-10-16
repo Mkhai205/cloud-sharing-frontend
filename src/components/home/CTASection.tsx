@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTASection() {
     return (
         <div id="sign-up" className="bg-amber-50 min-h-96 flex items-center">
@@ -8,9 +10,12 @@ export default function CTASection() {
                 </h2>
                 <div className="mt-8 flex justify-center lg:mt-0 flex-shrink-0">
                     <div className="inline-flex rounded-md shadow">
-                        <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-amber-500 bg-white hover:text-slate-50 hover:bg-amber-500 hover:scale-105 transition-all duration-200 cursor-pointer">
+                        <Link
+                            href="/register"
+                            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-amber-500 bg-white hover:text-slate-50 hover:bg-amber-500 hover:scale-105 transition-all duration-200 cursor-pointer"
+                        >
                             Sign up for free
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
